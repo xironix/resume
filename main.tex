@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reference:
+% Debarghya Das (http://debarghyadas.com)
+
+\documentclass[]{hieudo-build}
+
+
+\begin{document}
+
+%% TITLE NAME %%
+\include{include/contact}
+\namesection{\fullname}
+{\urlstyle{same}
+	\faEnvelope \href{mailto:\emailaddr}{ \emailaddr}\\
+%%	\faGithub \href{https://\gitaddr}{   \gitaddr}\\ %%
+	\faLinkedinSquare \href{https://\linkedaddr}{   \linkedaddr}\\
+	\faPhone \href{tel:\mobile}{   \mobile}
+}
+    
+%% COLUMN ONE %%
+\begin{minipage}[t]{0.34\textwidth} 
+
+\input{include/skills}
+\input{include/coursework}
+\input{include/additional}
+\input{include/awards}
+
+%% COLUMN TWO %%
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+\input{include/experience}
+\input{include/education}
+
+\end{minipage} 
+
+\end{document}  
