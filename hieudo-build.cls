@@ -21,6 +21,9 @@
 \usepackage{fontawesome}
 \pagenumbering{gobble}
 \usepackage{datetime2}
+\usepackage{tikz}
+\usetikzlibrary{intersections}
+
 
 % Color definitions
 \definecolor{date}{HTML}{000000} 
@@ -93,3 +96,6 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+% Invisible Subsections
+\newcommand\invisiblesubsection[1]{\refstepcounter{subsection}  \addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection}#1} \sectionmark{#1}}
