@@ -28,7 +28,7 @@
 % Color definitions
 \definecolor{date}{HTML}{000000} 
 \definecolor{primary}{HTML}{000000}
-\definecolor{headings}{HTML}{0E0E0F}
+\definecolor{headings}{HTML}{C0C0C0}
 \definecolor{subheadings}{HTML}{1A1C1E}
 
 % Set main fonts
@@ -96,6 +96,3 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
-
-% Invisible Subsections
-\newcommand\invisiblesubsection[1]{\refstepcounter{subsection}  \addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection}#1} \sectionmark{#1}}
